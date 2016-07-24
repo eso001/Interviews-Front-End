@@ -1,0 +1,21 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/Users/ericso0303/.nvm/v0.10.29/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'dev' ]
+2 info using npm@3.10.5
+3 info using node@v0.10.29
+4 verbose stack Error: ENOENT, open '/Users/ericso0303/Desktop/Interviews-Front-End/package.json'
+5 verbose cwd /Users/ericso0303/Desktop/Interviews-Front-End
+6 error Darwin 15.5.0
+7 error argv "node" "/Users/ericso0303/.nvm/v0.10.29/bin/npm" "run" "dev"
+8 error node v0.10.29
+9 error npm  v3.10.5
+10 error path /Users/ericso0303/Desktop/Interviews-Front-End/package.json
+11 error code ENOENT
+12 error errno 34
+13 error enoent ENOENT, open '/Users/ericso0303/Desktop/Interviews-Front-End/package.json'
+14 error enoent ENOENT, open '/Users/ericso0303/Desktop/Interviews-Front-End/package.json'
+14 error enoent This is most likely not a problem with npm itself
+14 error enoent and is related to npm not being able to find a file.
+15 verbose exit [ 34, true ]

@@ -6,10 +6,9 @@ import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 import reduxPromise from 'redux-promise';
 import reducers from '../src/reducers/indexReducer';
 import Search from '../src/components/search';
+
 const dest = document.getElementById('content');
-
 const createStoreWithMiddleware = applyMiddleware(reduxPromise)(createStore);
-
 const store = createStoreWithMiddleware(reducers);
 
 ReactDOM.render(

@@ -5,13 +5,16 @@ import * as actions from '../actions/indexActions';
 import DisplayData from './displayData';
 
 class Search extends Component {
+
   componentWillMount(){
     const {rootSearch} = this.props;
     rootSearch();
   }
+
   shouldComponentUpdate(nextProps, nextState) {
     return shallowCompare(this, nextProps, nextState);
   }
+
   search(event){
     const {sittingSearch, boardingSearch} = this.props;
     var val = event.target.value;
@@ -22,6 +25,7 @@ class Search extends Component {
       sittingSearch()
     }
   }
+  
   render() {
     return (
       <span>

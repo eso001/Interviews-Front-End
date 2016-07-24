@@ -3,5 +3,4 @@ import search from './searchReducer';
 const rootReducer = combineReducers({
 	search
 });
-
 export default rootReducer;

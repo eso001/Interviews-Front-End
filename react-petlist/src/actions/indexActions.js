@@ -2,6 +2,7 @@ import axios from 'axios';
 import { ROOT_SEARCH, SITTING_SEARCH, BOARDING_SEARCH } from './types';
 
 const rootUrl = '/static/search.json';
+
 export function rootSearch(){
 	const searchData = axios.get(`${rootUrl}`);
 	return {
@@ -19,7 +20,6 @@ export function sittingSearch(){
 }
 export function boardingSearch(){
 	const boardingSearch = axios.get(`${rootUrl}?service=boarding`);
-
 	return {
 		type: BOARDING_SEARCH,
 		payload: boardingSearch

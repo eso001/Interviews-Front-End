@@ -7,10 +7,11 @@ class DisplayData extends Component{
 			return <div>Loading...</div>
 		}
 		return results.map(function(user, ind){
+
 			let index;
 			let description;
-			if(user.description && user.description.length >= 48){
 
+			if(user.description && user.description.length >= 48){
 				for(let i = user.description.length; i > 0; i--){
 					if(user.description[i] === " "){
 						index = i;
@@ -19,6 +20,7 @@ class DisplayData extends Component{
 				}
 				description = user.description.slice(0,index) + "..." 
 			}
+
 			let lastName = user.user.last[0].toUpperCase();
 			return (
 				<div key={ind}>
@@ -39,12 +41,14 @@ class DisplayData extends Component{
 		})
 	}
 	render(){
+
 		if(this.props.searchResults.data){
 			var results = this.props.searchResults.data;
 		}
+
 		return (
 				<div>{this.renderData(results)}</div>
-			)
+		)
 	}
 }
 
